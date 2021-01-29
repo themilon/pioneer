@@ -10,7 +10,26 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     padding: 50px;
-    padding-top: 45px;
+    padding-bottom: 55px;
+}
+
+.deposit {
+    background-color: blueviolet;
+}
+
+.withdraw {
+    background-color: coral;
+}
+
+.balance {
+    background-color: darkcyan;
+}
+
+.inner {
+    margin: 0 15px;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
 }
 
 #transition-area {

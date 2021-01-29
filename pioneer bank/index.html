@@ -21,22 +21,50 @@
     </div>
     <!-- Another Screen -->
     <div id="transition-area">
-        <h3>Welcome</h3>
-        <div class="row">
-            <div class="col-md-4 bg-success ">
-                <h3>Deposit</h3>
-                <h5>$ 00</h5>
+        <h3 class="text-center pb-5">Welcome</h3>
+        <div class="row pb-5">
+            <div class="col-md-4">
+                <div class="inner deposit">
+                    <h3>Deposit</h3>
+                    <h5>$ <span id="current-Deposit">00</span> </h5>
+                </div>
             </div>
-            <div class="col-md-4 bg-success ">
-                <h3>Withdraw</h3>
-                <h5>$ 00</h5>
+            <div class="col-md-4">
+                <div class="inner withdraw">
+                    <h3>Withdraw</h3>
+                    <h5>$ <span id="withdraw-balance">00</span></span>
+                    </h5>
+                </div>
             </div>
-            <div class="col-md-4 bg-success ">
-                <h3>current Balance</h3>
-                <h5>$ 00</h5>
+            <div class="col-md-4">
+                <div class="inner balance">
+                    <h3> Balance</h3>
+                    <h5>$<span id="current-balance">70</span></h5>
+                </div>
             </div>
         </div>
+        <!-- Deposit and withdraw area -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h5>Deposit</h5>
+                    <input id="deposit-amount" type="text" class="form-control mb-3" placeholder="Enter Deposit Amount Here">
+                    <button id="deposit-btn" class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h5>Withdraw</h5>
+                    <input id="withdraw-target" type="text" class="form-control mb-3" placeholder="Enter Withdraw Amount Here">
+                    <button id="withdraw-btn" class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+
+
 
     <script src="function.js"></script>
 </body>
